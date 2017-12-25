@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Translate with vocabulary",
+  "version": "0.0.1",
+  "description": "Translate words with select, base on vocabulary.com",
+  "icons": {
+    "16": "./assets/image/icon.png",
+    "48": "./assets/image/icon.png",
+    "128": "./assets/image/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "./assets/image/icon.png",
+    "default_title": "vocabulary",
+    "default_popup": "./pages/popup.html"
+  },
+  "author": "Yanxinyu",
+  // "background": {
+  //   "persistent": false
+  // },
+  "content_scripts": [ // 嵌入页面JS
+    {
+      "matches": ["*://*/*"],
+      "js": ["dist/index.js"],
+      "css": ["dist/index.css"]
+    }
+  ]
+}

@@ -5,12 +5,6 @@ type Props = {
   name: string
 }
 
-export default class Container extends React.Component<Props> {
-  init() {
-    this.state.test = 1;
-  }
-
-  render() {
-    return <p>{ this.props.name }</p>;
-  }
+export default function Container(props: Props) {
+  return <p>{ props.name }</p>;
 }

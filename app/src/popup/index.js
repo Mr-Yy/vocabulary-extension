@@ -4,7 +4,7 @@ import Popup from './container/container';
 
 export default function() {
   ReactDOM.render(
-    <Popup name="Vocabulary." />,
+    <Popup />,
     document.getElementById('popup')
   );
 }

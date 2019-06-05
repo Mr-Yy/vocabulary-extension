@@ -1,0 +1,13 @@
+[ignore]
+<PROJECT_ROOT>/app/dist
+
+[include]
+
+[libs]
+node_modules/mobx/lib/mobx.js.flow
+
+[lints]
+
+[options]
+
+[strict]
